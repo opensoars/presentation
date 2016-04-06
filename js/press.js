@@ -24,9 +24,8 @@ press.activateSlide = function (n) {
 };
 
 press.deactivateSlide = function (n) {
-  if (this.d.slides[n]) {
+  if (this.d.slides[n])
     this.d.slides[n].style.display = 'none';
-  }
 };
 
 press.initKeyboard = function () {
@@ -94,7 +93,7 @@ press.init = function (options) {
 
   this.options = options;
 
-  this.d.slides = document.getElementsByClassName('slide');
+  this.d.slides = options.slides;
   this.activateSlide(0);
 
   if (options.keyboard)
