@@ -19,7 +19,7 @@ press.activateSlide = function (n) {
     this.d.active_slide = n;
 
     if (this.d.current_slide_el)
-      this.d.current_slide_el.textContent = (n + 1);
+      this.d.current_slide_el.textContent = n + 1;
   }
 };
 
