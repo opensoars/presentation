@@ -5,6 +5,9 @@
 
 button {
   padding: 0px 10px;
+  border: 0px solid black;
+  background: white;
+  outline: none;
 }
 
 div.slides {

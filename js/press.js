@@ -31,10 +31,8 @@ press.deactivateSlide = function (n) {
 press.initKeyboard = function () {
   var _this = this;
   document.body.addEventListener('keydown', function (evt) {
-    if (evt.which === 37)
-      _this.navigateLeft();
-    else if (evt.which === 39)
-      _this.navigateRight();
+    if (evt.which === 37) _this.navigateLeft();
+    else if (evt.which === 39) _this.navigateRight();
   });
 };
 
@@ -82,7 +80,7 @@ press.initSlideNumbers = function () {
   container.style.top = '0px';
   container.style.left = '0px';
   container.style.padding = '10px';
-
+  container.id = 'slide_number_container';
   document.body.appendChild(container);
 
   this.d.current_slide_el = current_slide;
@@ -91,15 +89,10 @@ press.initSlideNumbers = function () {
 press.init = function (options) {
   options = options || {};
 
-  this.options = options;
-
   this.d.slides = options.slides;
   this.activateSlide(0);
 
-  if (options.keyboard)
-    this.initKeyboard();
-  if (options.arrows)
-    this.initArrows();
-  if (options.slide_numbers)
-    this.initSlideNumbers();
+  if (options.keyboard) this.initKeyboard();
+  if (options.arrows) this.initArrows();
+  if (options.slide_numbers) this.initSlideNumbers();
 };
