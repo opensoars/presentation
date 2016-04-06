@@ -55,7 +55,7 @@ press.initArrows = function () {
 
   var arrow_container = document.createElement('div');
   arrow_container.style.position = 'absolute';
-  arrow_container.style.bottom = '0px';
+  arrow_container.style.top = '0px';
   arrow_container.style.right = '0px';
   arrow_container.style.fontSize = '200%';
   arrow_container.appendChild(left_arrow);
@@ -80,7 +80,7 @@ press.initSlideNumbers = function () {
   container.appendChild(total_slides);
   container.style.position = 'absolute';
   container.style.top = '0px';
-  container.style.right = '0px';
+  container.style.left = '0px';
   container.style.padding = '10px';
 
   document.body.appendChild(container);
