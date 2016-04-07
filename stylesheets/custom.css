@@ -1,12 +1,10 @@
 * {
-  margin: 0px;
-  padding: 0px;
 }
 
 button {
   padding: 0px 10px;
   border: 0px solid black;
-  background: white;
+  background: none;
   outline: none;
 }
 
@@ -25,3 +23,23 @@ div.slide {
   width: 50%;
 }
 
+div.slide li {
+  margin-bottom: 20px;
+}
+
+
+.s1 {
+  font-size: 125%;
+}
+.s2 {
+  width: 90% !important;
+  font-size: 175%;
+}
+.s3 {
+  width: 50% !important;
+  font-size: 175%; 
+}
+.s4, .s5, .s6, .s7, .s8, .s9, .s10 {
+  width: 60% !important;
+  font-size: 150%; 
+}
